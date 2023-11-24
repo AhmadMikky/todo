@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ImgHero from "./images/images.jpg"; // Adjust the path accordingly
-import "./App.css"; // Import the CSS file
+import ImgHero from "./images/images.jpg"; 
+import "./App.css"; 
 
 const App = () => {
   const [todos, setTodos] = useState([]);
@@ -52,12 +52,12 @@ const App = () => {
     style={{
       backgroundColor: index % 2 === 0 ? "#e0e0e0" : "#f0f0f0",
     }}
-    className="todoContainer"  // Update class name
+    className="todoContainer"  
   >
     <div className="todo">
       <span>{item.title}</span>
     </div>
-    <button onClick={() => deleteItem(item.id)} className="deleteButton">  {/* Update class name */}
+    <button onClick={() => deleteItem(item.id)} className="deleteButton">  {}
       Delete
     </button>
   </div>
